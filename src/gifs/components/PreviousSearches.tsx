@@ -3,12 +3,11 @@ interface PreviousSearchesProps {
 }
 export const PreviousSearches = ({searches}: PreviousSearchesProps) => {
   return (
-    <div className="previous-searches">
-      <h2>Busquedas recientes</h2>
-      <ul className="previous-searches-list">
+    <div className="flex flex-col items-center justify-center gap-2">
+      <ul className="flex align-center justify-center flex-wrap gap-2 max-w-[400px]">
         {
             searches.length > 0 ? searches.map((search, index) => (
-                <li key={index}>{search}</li>
+                <li className="py-1 px-2 border border-[#ccc] rounded-2xl cursor-pointer text-sm" key={index}>{search}</li>
             )) : (
                 <li>No hay busquedas previas</li>
             )
