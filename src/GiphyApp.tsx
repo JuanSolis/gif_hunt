@@ -1,28 +1,27 @@
+import { GifList } from "./gifs/components/GifList";
+import { PreviousSearches } from "./gifs/components/PreviousSearches";
+import { mockGifs } from "./mock-data/gifs.mock";
+import { CustomHeader } from "./shared/components/CustomHeader";
+import { SearchBar } from "./shared/components/SearchBar";
+
 export const GiphyApp = () => {
   return (
     <>
       {/* Header */}
-      <div className="content-center">
-        <h1>Buscador de GIFs</h1>
-        <p>Encuentra el gif perfect</p>
-      </div>
+      <CustomHeader title="Buscador de GIFs" description="Encuentra el gif perfect" />
 
       {/* Search */}
 
-      <div className="search-container">
-        <input type="text" placeholder="Buscar GIFs" />
-        <button>Buscar</button>
-      </div>
+      <SearchBar placeholder="Buscar GIFs" />
 
       {/* Busquedas Previas */}
 
-      <div className="previous-searches">
-        <h2>Busquedas recientes</h2>
-        <ul className="previous-searches-list">
-          <li>Gatos</li>
-          <li>Perros</li>
-        </ul>
-      </div>
+      <PreviousSearches searches={["Gato", "Perro"]} />
+
+      {/* GIFs */}
+      <h2 className="content-center">GIFs encontrados</h2>
+      <GifList gifs={mockGifs} />
+      
     </>
   );
 };
