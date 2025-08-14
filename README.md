@@ -1,6 +1,6 @@
 # 🎯 GifHunt
 
-![GifHunt Logo](./public/gifhunt-logo.svg)
+![GifHunt Logo](public/gifHunt_logo.svg)
 
 **GifHunt** es un buscador de GIFs rápido, moderno y visualmente atractivo, diseñado para encontrar y compartir animaciones en segundos.  
 GifHunt ofrece una experiencia fluida y divertida para todos los amantes de los GIFs.
