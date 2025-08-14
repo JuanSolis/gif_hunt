@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" role="img" aria-labelledby="title desc">
+  <title id="title">GiphyApp Icon Dark</title>
+  <desc id="desc">Icono de marco cuadrado con líneas de movimiento estilo neón para GiphyApp.</desc>
+
+  <!-- Gradiente neón -->
+  <defs>
+    <linearGradient id="neonGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00F0FF"></stop>
+      <stop offset="50%" stop-color="#FF00A6"></stop>
+      <stop offset="100%" stop-color="#00FF85"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo oscuro -->
+  <rect width="80" height="80" rx="16" fill="#121212"></rect>
+
+  <!-- Marco exterior -->
+  <rect x="8" y="8" width="64" height="64" rx="10" fill="none" stroke="url(#neonGrad)" stroke-width="5"></rect>
+
+  <!-- Marco interior -->
+  <rect x="18" y="18" width="44" height="44" rx="6" fill="url(#neonGrad)" opacity="0.12"></rect>
+
+  <!-- Líneas de movimiento -->
+  <g stroke-linecap="round" stroke-width="3">
+    <line x1="58" y1="20" x2="66" y2="16" stroke="#00FF85"></line>
+    <line x1="62" y1="28" x2="70" y2="28" stroke="#FFD500"></line>
+    <line x1="60" y1="36" x2="68" y2="40" stroke="#00F0FF"></line>
+  </g>
+</svg>

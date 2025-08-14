@@ -38,7 +38,7 @@ export const SearchBar = ({ placeholder = "Buscar GIFs", onHandleSearch }: Searc
       <div className="w-fit mt-10 mb-5 flex  justify-center items-center gap-2">
         <label
           htmlFor="default-search"
-          className="mb-2 text-lg font-medium text-gray-900 sr-only"
+          className="mb-2 font-medium text-gray-900 sr-only"
         >
           Buscar
         </label>
@@ -49,7 +49,7 @@ export const SearchBar = ({ placeholder = "Buscar GIFs", onHandleSearch }: Searc
             autoFocus
             type="search"
             id="default-search"
-            className="block w-[60%] p-4 ps-10 text-5xl text-gray-900 outline-none focus "
+            className="block w-[50%] md:w-[60%] p-4 ps-10 text-2xl md:text-5xl text-gray-900 outline-none focus "
             placeholder={placeholder}
             onKeyDown={(e) => {
               handleKeyDown(e);

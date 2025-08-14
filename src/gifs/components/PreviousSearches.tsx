@@ -13,7 +13,7 @@ export const PreviousSearches = ({searches, onLabelClick, onClearTerms}: Previou
             if (onClearTerms) {
               onClearTerms();
             }
-          }} className="bg-black text-white py-2 px-4 border border-[#ccc] rounded-2xl cursor-pointer text-lg hover:bg-gray-900">
+          }} className="bg-black text-white py-2 px-4 border border-[#ccc] rounded-2xl cursor-pointer text-sm md:text-lg hover:bg-gray-900">
             limpiar busquedas
           </div>
         }
@@ -23,7 +23,7 @@ export const PreviousSearches = ({searches, onLabelClick, onClearTerms}: Previou
                   if (onLabelClick) {
                     onLabelClick(search);
                   }
-                }} className="bg-white py-2 px-4 border border-[#ccc] rounded-2xl cursor-pointer text-lg hover:bg-gray-50"   key={index}>{search}</li>
+                }} className="bg-white py-2 px-4 border border-[#ccc] rounded-2xl cursor-pointer text-sm md:text-lg hover:bg-gray-50"   key={index}>{search}</li>
             )) : (
                 null
             )

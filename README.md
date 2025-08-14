@@ -1,69 +1,28 @@
-# React + TypeScript + Vite
+# 🎯 GifHunt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![GifHunt Logo](./public/gifhunt-logo.svg)
 
-Currently, two official plugins are available:
+**GifHunt** es un buscador de GIFs rápido, moderno y visualmente atractivo, diseñado para encontrar y compartir animaciones en segundos.  
+GifHunt ofrece una experiencia fluida y divertida para todos los amantes de los GIFs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Características
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔍 **Búsqueda inteligente** por palabras clave.
+- 🖼️ **Vista previa instantánea** de los GIFs.
+- 📤 **Copiar en un clic** alojado al portapapeles.
+- ⚡ **Interfaz rápida y responsive** diseñada con React + TailwindCSS.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tecnologías utilizadas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Frontend:** [React](https://react.dev/) + [Vite](https://vitejs.dev/)  
+- **Estilos:** [TailwindCSS](https://tailwindcss.com/)  
+- **API de GIFs:** [GIPHY API](https://developers.giphy.com/)  
+- **Fuentes:** [Bangers](https://fonts.google.com/specimen/Bangers)  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Instalación y ejecución en local
